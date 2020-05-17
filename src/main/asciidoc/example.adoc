@@ -1,0 +1,40 @@
+= Hello, AsciiDoc!
+= Hello, AsciiDoc!
+Doc Writer <doc@example.com>
+
+An introduction to http://asciidoc.org[AsciiDoc].
+
+[%header,format=csv]
+|===
+Author,Title,Year
+Michael C. Feathers,Working Effectively with Legacy Code,2004
+Robert C. Martin,Clean Code,2008
+Joshua Bloch,Effective Java,2017
+|===
+
+== Header 2
+
+Content content.
+
+* List item 1
+* List item 2
+
+:stem: latexmath
+:icons: font
+:source-highlighter: highlightjs
+
+--
+latexmath:[\sqrt{4}]
+
+latexmath:[\alpha + 3 = g]
+--
+
+icon:comment[] This is a comment icon
+
+
+[source,ruby]
+----
+require 'asciidoctor'
+
+puts Asciidoctor.convert_file 'mysample.adoc', to_file: false
+----

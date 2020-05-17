@@ -1,0 +1,75 @@
+:last-update-label!:
+:chapter-label:
+:doctype: book
+:linkcss:
+:stylesdir: css/
+:source-highlighter: coderay
+:numbered:
+:icons: font
+:pdf-themesdir: css/
+:pdf-theme: hb
+:hyphens:
+// using experimental to support btn: macro
+:experimental:
+:toclevels: 3
+:sectnumlevels: 4
+// there will be anchors (paragraph sign) in front of the headings
+:sectanchors:
+:classification-level: confidential
+:status: ${docstatus}
+:datum: ${git.commit.time}-${git.commit.id}
+:author: Firstname Lastname (Company)
+:reference: ABC-XYZ
+//Title and Version can be directly edited below
+
+
+= Manual: {reference}
+{author}
+v${project.version}, {datum} <{status} - {classification-level}>
+
+//When you change the font, you might run into problems for characters like "--" > Use Noto Serif to be safe
+//List of Tables / Figures currently not supported, but could be realized with extension (http://discuss.asciidoctor.org/List-of-tables-figures-td2829.html)
+
+== Chapter
+
+=== Sub-Chapter
+
+// https://asciidoctor.org/
+
+The Asciidoctor project is an effort to bring a comprehensive and accessible publishing toolchain, centered around the AsciiDoc syntax, to a growing range of ecosystems, including Ruby, JavaScript and the JVM.
+
+In addition to an AsciiDoc processor and a collection of stylesheets, the project provides plugins for Maven, Gradle and Guard and packages for operating systems such as Fedora, Debian and Ubuntu. It also pushes AsciiDoc to evolve by introducing new ideas and innovation and helps promote AsciiDoc through education and advocacy.
+
+[col=3*]
+|===
+|Col1|Col2|Col3|Col4
+
+| There are incomprehensible, sometimes long but ubiquitous words with hyphenation.
+| There are incomprehensible, sometimes long but ubiquitous words with hyphenation.
+| There are incomprehensible, sometimes long but ubiquitous words with hyphenation.
+| There are incomprehensible, sometimes long but ubiquitous words with hyphenation.
+
+|===
+
+== Chapter
+
+=== Sub-Chapter
+
+
+:stem: latexmath
+
+1 + 2
+
+stem:[1+2]
+
+Water (stem:[H_2O]) is a critical component.
+
+What is the square root: stem:[sqrt(4) = 2]?
+
+//[stem]
+[latexmath]
+++++
+sqrt(4) = 2
+
+\alpha + \beta
+++++

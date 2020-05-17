@@ -1,0 +1,57 @@
+:stem: latexmath
+
+= Table example with latex syntax
+
+== Testing
+
+I'm also testing a few admonitions
+
+[NOTE]
+.First admonition
+Here you have a note. 
+====
+.Table inside a block
+[cols=".^,<.^a,>.^a"]
+|===
+| (Test) \[X_nY_m\]
+| * \(X\) with \(i\)
+* \(Y\) with \(j\)
+| [cols=">.^"]
+!===
+! FOO ! BAR
+!===
+|===
+====
+
+IMPORTANT: Here a second admonition with no title.
+
+//.Image
+//image::./picture.jpg[Picture!]
+
+
+
+
+//= Title
+:source-highlighter: coderay
+
+== Asciidoc block in table test
+
+Non-block math: latexmath:[3^2]
+
+Table whose right column contains several types of math
+latexmath blocks / inlines.
+
+[cols="2"]
+|====
+| A standalone latexmath block
+   a|
+[latexmath]
+++++
+3^2
+++++
+| An inline latexmath expression
+   a| Text followed by equation: latexmath:[3^2] :followed by text
+|====
+
+
+
